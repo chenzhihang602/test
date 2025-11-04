@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: social-service
+  profiles:
+    include: secret
+    active: ${SPRING_PROFILE_ACTIVE:dev}
+  cloud:
+    stream:
+      bindings:
+        social-output:
+          destination: social
+          content-type: application/json
+        social-input:
+          destination: social
+          content-type: application/json
+          group: social-service
