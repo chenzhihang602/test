@@ -17,6 +17,7 @@
         <module>user-service</module>
         <module>goods-service</module>
         <module>im-service</module>
+        <module>social-service</module>
     </modules>
 
     <packaging>pom</packaging>
